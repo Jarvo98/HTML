@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>FlexBoxExample2</title>
+		<style type="text/css">
+			h1, h2{
+				text-align: center;
+			}
+			#center, #left, #right{
+				margin: 4px;
+				padding: 4px;
+			}
+			#center > p, #left > p, #right > p{
+				text-align: center; 
+			}
+			#all{
+				border: 1px black solid;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			#columnContainer{
+				display: flex;
+				background-color: white;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			img{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			#header{
+				background-color: red;
+			}
+			#left{
+				background-color: white;
+			}
+			#center{
+				background-color: white;
+			}			
+			#right{
+				background-color: white;
+			}
+			#footer{
+				background-color: brown;
+			}
+		</style>
+	</head>
+		<body>
+		<div id="all">
+			<div id="header">
+				<h1>Misión de Fallout 5</h1>
+			</div>
+			<div id="columnContainer">
+				<div id="left">
+					<h2>Información</h2>
+					<p>Estás buscando una manera de restaurar la</p>
+					<p>electricidad en la ciudad</p>
+					<p>y la única información que posees es la </p>
+					<p>de cierto vagabundo que te dijo por ahí.</p>
+					<p>Tienes que buscar una estación de poder.</p>
+					<img src="electricidad.jpg" alt="Tu navegador no puede mostrar la imagen" height="100px" width="100px">
+				</div>
+				<div id="center">
+					<h2>Ubicación</h2>
+					<p>La estación de poder está ubicada</p>
+					<p>en el único terreno baldío de la ciudad.</p>
+					<p>Tienes que buscar la estación y</p>
+					<p>encenderla para darle electricidad</p>
+					<img src="TerrenoBaldío.jpg" alt="Tu navegador no puede mostrar la imagen" height="100px" width="100px">
+				</div>
+				<div id="right">
+					<h2>Arma</h2>
+					<p>En ese terreno valdío encontrarás cualquier</p>
+					<p>cantidad de mounstros, esqueletos y zombies.</p>
+					<p>Te recomiendo que vayas con esta arma.</p>
+					<p>Esta pistola dispara laser y calcina a</p>
+					<p>cualquier enemigo al que le aciertes</p>
+					<img src="ArmaDeRayos.jpg" alt="Tu navegador no puede mostrar la imagen" height="100px" width="100px">
+				</div>
+			</div>
+			<div id="footer">
+				<h2>Recompensa: Power Armor completa</h2>
+			</div>
+		</div>
+	</body>
+</html>
